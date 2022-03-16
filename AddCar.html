@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .add-page {
+        width: 600px;
+        padding: 1% 0 0;
+        margin: auto;
+      }
+      select{
+          background-color: #835d8d;
+          width: 30%;
+          border-radius: 10px;
+      }
+      h1 {
+        color: rgb(106, 99, 201);
+        font-size: 45px;
+      }
+      label{
+        font-size: 30px;
+      }
+      .form {
+        position: relative;
+        background: #ffffff;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+      }
+      .form input {
+        font-family: 'Roboto', sans-serif;
+        outline: 0;
+        background: #b4bbdb;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      button {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #835d8d;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 14px;
+        transition: all 0.3 ease;
+        cursor: pointer;
+      }
+      button:hover,
+      button:active,
+      button:focus {
+        background: #9357aa;
+      }
+      body {
+        background: #7ca876;
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="add-page">
+      <div class="form">
+          <label>Select car model:</label>
+          <select>
+            <option value="honda">honda</option>
+            <option value="mercedez">mercedez</option>
+            <option value="benz">benz</option>
+            <option value="maruthi">maruthi</option>
+          </select>
+          <div>
+            <h3>
+              <label>Customer Name :</label>
+            </h3>
+            <input
+              type="text"
+              class="form-control"
+              name="customer_name"
+              placeholder="customer name .."
+            />
+            <h3>
+              <label>Customer email :</label>
+            </h3>
+            <input
+              type="email"
+              class="form-control"
+              name="customer_email"
+              placeholder="customer email .."
+            />
+            <h3>
+              <label>Car Color : </label>
+            </h3>
+            <input type="color" name="color" class="form-control" />
+            <div class="text-center">
+              <button>Add car</button>
+              <h3>
+                <a href="/">Goto Home page</a>
+              </h3>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
